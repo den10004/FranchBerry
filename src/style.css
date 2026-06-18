@@ -1,12 +1,22 @@
 @import url(./styles/header.css);
 @import url(./styles/card.css);
+@import url(./styles/hero.css);
 @import url(./styles/footer.css);
 
 :root {
   --white: #FFFFFF;
   --blue: #306EFD;
+  --primary: #18B653;
+
 
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -14,14 +24,12 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 1px 0px;
   font-family: 'Manrope', sans-serif;
   background: linear-gradient(92.23deg, #EFFAF3 0.47%, #D3EEEC 96.76%);
-}
-
-.basket-body {
   position: relative;
 }
+
 
 h1,
 h2,
@@ -36,6 +44,23 @@ p {
   padding: 0 20px;
   margin: 0 auto;
 }
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.container-wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1236px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
 
 ul {
   list-style-type: disc;
@@ -65,19 +90,55 @@ button {
 }
 
 .headline-h1 {
-  font-weight: 800;
   font-size: 56px;
-  line-height: 100%;
-  letter-spacing: 0%;
+  font-weight: 700;
+  line-height: 135%;
+}
+
+.paragraph {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+main {
+  padding: 0 10px;
+}
+
+.body-bg {
+  position: absolute;
+  top: 210px;
+  right: 0;
+}
+
+
+@media (max-width: 1300px) {
+  .body-bg {
+    top: 430px;
+  }
 }
 
 @media (max-width: 768px) {
+  .body-bg {
+    top: 240px;
+  }
+
   button {
     font-size: 18px;
   }
 
   .btn-blue {
     padding: 10px 15px;
+  }
+
+  .headline-h1 {
+    font-size: 35px;
+    line-height: 100%;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    line-height: 100%;
   }
 }
 
@@ -89,6 +150,14 @@ button {
 
   button>img {
     width: 10px;
+  }
+
+  .headline-h1 {
+    font-size: 28px;
+  }
+
+  .paragraph {
+    font-size: 16px;
   }
 }
 

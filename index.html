@@ -14,7 +14,7 @@
 
   <body>
     <header>
-      <div class="header">
+      <div class="container-wrapper">
         <img src="./src/images/logo.svg" alt="логотип franchBerry" />
         <button class="btn-blue">
           <img src="./src/images/+.svg" alt="Добавить франшизу" />
@@ -22,6 +22,26 @@
         </button>
       </div>
     </header>
-    <main></main>
+
+    <div class="body-bg">
+      <picture>
+        <source media="(max-width: 500px)" srcset="./src/images/bg-min.webp" />
+        <img src="./src/images/bg.webp" alt="узор" />
+      </picture>
+    </div>
+
+    <main>
+      <div class="wrapper">
+        <div class="hero">
+          <h1 class="headline-h1">
+            Актуальные франшизы для открытия бизнеса в <span>2016</span> году
+          </h1>
+          <p class="paragraph">
+            Получите материалы по нескольким франшизам и сравните условия
+            запуска. Так проще выбрать проект под ваш бюджет и формат бизнеса
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

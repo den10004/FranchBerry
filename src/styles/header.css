@@ -9,15 +9,6 @@ header {
 
 }
 
-.header {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1236px;
-    justify-content: space-between;
-    box-sizing: border-box;
-    gap: 10px;
-}
-
 .header>img {
     width: 257px;
 }
@@ -30,13 +21,13 @@ header {
 
 
 @media (max-width: 768px) {
-    .header>img {
+    header>div>img {
         width: 200px;
     }
 }
 
 @media (max-width: 500px) {
-    .header>img {
+    header>div>img {
         width: 137px;
     }
 }

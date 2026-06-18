@@ -1,0 +1,27 @@
+.hero {
+    margin-top: 75px;
+}
+
+.hero>h1 {
+    max-width: 851px;
+}
+
+.hero>p {
+    margin-top: 25px;
+    max-width: 768px;
+}
+
+.hero>h1>span {
+    color: var(--primary);
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 30px;
+    }
+
+    .hero>p {
+        margin-top: 15px;
+    }
+}
