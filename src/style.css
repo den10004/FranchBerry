@@ -111,16 +111,30 @@ main {
   right: 0;
 }
 
+.body-bg1 {
+  position: absolute;
+  top: 268px;
+  right: 124px;
+}
+
 
 @media (max-width: 1300px) {
   .body-bg {
     top: 430px;
+  }
+
+  .body-bg1 {
+    top: 490px;
   }
 }
 
 @media (max-width: 768px) {
   .body-bg {
     top: 240px;
+  }
+
+  .body-bg1 {
+    top: 310px;
   }
 
   button {
@@ -139,6 +153,12 @@ main {
   .paragraph {
     font-size: 18px;
     line-height: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .body-bg1 {
+    display: none;
   }
 }
 
