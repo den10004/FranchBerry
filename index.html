@@ -16,8 +16,19 @@
     <header>
       <div class="container-wrapper">
         <img src="./src/images/logo.svg" alt="логотип franchBerry" />
-        <button class="btn-blue">
-          <img src="./src/images/+.svg" alt="Добавить франшизу" />
+        <button class="btn-blue header__img">
+          <svg
+            width="19"
+            height="19"
+            viewBox="0 0 19 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.12001 18.32V10.2H6.19888e-06V8.1H8.12001V-4.29153e-06H10.22V8.1H18.34V10.2H10.22V18.32H8.12001Z"
+              fill="white"
+            />
+          </svg>
           Добавить франшизу
         </button>
       </div>
@@ -47,7 +58,152 @@
         </div>
 
         <div class="cards__list">
-          <div class="card">sadas</div>
+          <div class="card">
+            <div class="card__img">
+              <img src="./src/images/photo.webp" alt="фото" />
+            </div>
+            <div class="card__invest">
+              <div class="card__params">
+                <div class="card__inv">
+                  <img src="./src/images/coint.svg" alt="инвестиции" />
+                  <div>
+                    <p class="paragraph2">Инвестиция</p>
+                    <span class="card-span card-span-green"
+                      >от 1 200 000 ₽</span
+                    >
+                  </div>
+                </div>
+                <div class="card__inv">
+                  <img src="./src/images/clock.svg" alt="Окупаемость" />
+                  <div>
+                    <p class="paragraph2">Окупаемость</p>
+                    <span class="card-span card-span-blue">от 8 месяцев</span>
+                  </div>
+                </div>
+                <div class="card__inv">
+                  <img src="./src/images/rocket.svg" alt="Срок запуска" />
+                  <div>
+                    <p class="paragraph2">Срок запуска</p>
+                    <span class="card-span card-span-green">от 30 дней</span>
+                  </div>
+                </div>
+                <div class="card__inv card__profit">
+                  <img src="./src/images/profit.svg" alt="Прибыль" />
+                  <div>
+                    <p class="paragraph2">Прибыль</p>
+                    <span class="card-span card-span-blue"
+                      >от 250 000 <br />
+                      ₽/мес</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <button class="btn-green">
+                Получить материалы
+                <svg
+                  width="37"
+                  height="15"
+                  viewBox="0 0 37 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M36.7071 8.07106C37.0976 7.68054 37.0976 7.04737 36.7071 6.65685L30.3431 0.292885C29.9526 -0.0976396 29.3195 -0.0976396 28.9289 0.292885C28.5384 0.683409 28.5384 1.31657 28.9289 1.7071L34.5858 7.36395L28.9289 13.0208C28.5384 13.4113 28.5384 14.0445 28.9289 14.435C29.3195 14.8255 29.9526 14.8255 30.3431 14.435L36.7071 8.07106ZM0 7.36395V8.36395H36V7.36395V6.36395H0V7.36395Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="card__logo">
+              <img src="./src/images/bb.svg" alt="логотип BB" />
+              <div class="card__brand">
+                <h3 class="headline-h3">BeBrand</h3>
+                <p class="paragraph2">
+                  Франшиза в сфере защиты интеллектуальной собственности
+                </p>
+              </div>
+            </div>
+            <div class="card__tags">
+              <div class="paragraph2-bold">
+                <svg
+                  width="19"
+                  height="26"
+                  viewBox="0 0 19 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.4055 9.91144V4.39044C10.4055 4.02481 9.9387 3.85662 9.7126 4.14912L3.08281 12.5952C2.88589 12.8511 3.06093 13.224 3.38914 13.224H6.67121C6.88272 13.224 7.05777 13.3995 7.05777 13.6116V20.6097C7.05777 20.99 7.53914 21.1436 7.75794 20.8364L14.9275 10.9133C15.1098 10.6573 14.9275 10.299 14.6138 10.299H10.7993C10.5878 10.299 10.4128 10.1235 10.4128 9.91144H10.4055Z"
+                    stroke="#222A32"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+                <span>Быстрый старт</span>
+              </div>
+              <div class="paragraph2-bold">
+                <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.5818 14.71H24V17.71H19.5818C19.2621 17.71 19 17.3888 19 16.9972V15.4306C19 15.0389 19.2621 14.7178 19.5818 14.7178V14.71Z"
+                    stroke="#222A32"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M23.1301 10.71H6.86989C6.38946 10.71 6 11.0756 6 11.5267V21.8932C6 22.3443 6.38946 22.71 6.86989 22.71H23.1301C23.6105 22.71 24 22.3443 24 21.8932V11.5267C24 11.0756 23.6105 10.71 23.1301 10.71Z"
+                    stroke="#222A32"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M21.1899 10.71H8.81009C8.36004 10.71 8 10.3642 8 9.93204V8.36289C8 7.93071 8.36004 7.58496 8.81009 7.58496L21.1899 5.70996C21.64 5.70996 22 6.05571 22 6.48789V9.93204C22 10.3642 21.64 10.71 21.1899 10.71Z"
+                    stroke="#222A32"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+                <span>Низкие вложения</span>
+              </div>
+              <div class="paragraph2-bold">
+                <svg
+                  width="25"
+                  height="27"
+                  viewBox="0 0 25 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.77713 17H10.2229C12.8615 17 15 19.2749 15 22.082V23H1V22.082C1 19.2749 3.13846 17 5.77713 17Z"
+                    stroke="#222A32"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M8 15C10.2091 15 12 13.2091 12 11C12 8.79086 10.2091 7 8 7C5.79086 7 4 8.79086 4 11C4 13.2091 5.79086 15 8 15Z"
+                    stroke="#222A32"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+                <span>Для начинающих</span>
+              </div>
+            </div>
+            <div class="card__headline">
+              BeBrand — сеть центров по защите брендов, патентов и авторских
+              прав.
+            </div>
+            <div class="card__content">
+              Мы помогаем предпринимателям регистрировать и защищать
+              интеллектуальную собственность, сопровождаем сделки и выстраиваем
+              юридическую защиту бизнеса. Проверенная бизнес-модель, обучение,
+              поддержка экспертов и готовые инструменты маркетинга позволяют
+              партнёрам быстро запустить офис и выйти на стабильный доход.
+              <br />
+              <br />
+              С BeBrand вы получаете надёжного партнёра и растущий рынок
+              юридических услуг.
+            </div>
+          </div>
         </div>
       </div>
     </main>

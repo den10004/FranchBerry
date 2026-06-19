@@ -36,4 +36,9 @@ header {
     header {
         padding: 10px 10px;
     }
+
+    .header__img>svg {
+        width: 10px;
+        height: 10px;
+    }
 }
