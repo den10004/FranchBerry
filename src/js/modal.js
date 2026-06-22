@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Modal script");
   const overlay = document.getElementById("modalOverlay");
   const franshiseModal = document.getElementById("modalfranshise");
   const successModal = document.getElementById("modalSuccess");
