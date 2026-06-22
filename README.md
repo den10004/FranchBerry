@@ -1,3 +1,3 @@
 # FranchBerry
 
-https://github.com/den10004/FranchBerry.git
+https://den10004.github.io/FranchBerry/

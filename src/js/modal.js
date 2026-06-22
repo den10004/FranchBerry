@@ -159,4 +159,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
+
+  const sliderContainers = document.querySelectorAll(".investment-slider");
+
+  sliderContainers.forEach((sliderEl) => {
+    const sliderWrapper = sliderEl.closest(".card__slider");
+
+    new Swiper(sliderEl, {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      navigation: {
+        prevEl: sliderWrapper.querySelector(".slider-btn-prev"),
+        nextEl: sliderWrapper.querySelector(".slider-btn-next"),
+      },
+    });
+  });
 });

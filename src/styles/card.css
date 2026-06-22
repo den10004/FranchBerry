@@ -20,11 +20,7 @@
 
 .card__img {
     grid-area: 1 / 2 / 5 / 3;
-}
-
-.card__img>img {
-    width: 100%;
-    border-radius: 25px;
+    position: relative;
 }
 
 .card__invest {
@@ -135,6 +131,80 @@
 }
 
 
+/*слайдер*/
+.card__inv>img {
+    width: 35px;
+}
+
+/* --- Swiper slider --- */
+.card__slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__slider .swiper {
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.card__slider .swiper-slide img {
+    height: auto;
+    display: block;
+}
+
+.slider-btn {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--blueFA);
+    color: var(--blue);
+    flex-shrink: 0;
+    transition: opacity 0.2s;
+}
+
+
+.slider-btn-prev svg,
+.slider-btn-next svg {
+    width: 25px;
+    height: 25px;
+}
+
+.card__slider .swiper-button-prev,
+.card__slider .swiper-button-next,
+.card__slider .swiper-pagination {
+    display: none !important;
+}
+
+.card__swiper_btns {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.card__swiper_btns>button {
+    border-radius: 50%;
+}
+
+/* --------------------- */
+
+.card__params {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    width: calc(100% - 315px);
+    flex-wrap: wrap;
+}
 
 @media (max-width: 1150px) {
     .card {
@@ -146,6 +216,43 @@
 
     .card__img {
         grid-area: 3 / 1 / 4 / 2;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .card__slider {
+        display: block;
+        gap: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .card__slider .swiper {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .card__slider .swiper-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .card__slider .swiper-slide {
+        width: 100%;
+        height: auto;
+    }
+
+    .card__slider .swiper-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card__swiper_btns {
+        bottom: 10px;
+        left: 10px;
+        right: auto;
     }
 
     .card__invest {
@@ -180,6 +287,7 @@
     .card__params {
         width: 100%;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -199,6 +307,10 @@
     .card__invest {
         padding-top: 0;
         border-top: none;
+    }
+
+    .card__slider .swiper {
+        border-radius: 20px;
     }
 }
 
@@ -220,6 +332,10 @@
 
     .card__profit>div>span>br {
         display: block;
+    }
+
+    .card__slider .swiper {
+        border-radius: 10px;
     }
 }
 
