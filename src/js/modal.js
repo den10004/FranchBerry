@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!franshiseForm) console.error("franshiseForm не найден");
   if (!channelInput) console.error("channelInput не найден");
 
-  console.log("franshiseForm:", franshiseForm);
-  console.log("channelInput:", channelInput);
-
   function openModal(e) {
     e.preventDefault();
     overlay.classList.add("active");

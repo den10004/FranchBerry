@@ -670,14 +670,18 @@
     </div>
 
     <!-- Модальное окно: заявка по франшизе -->
-    <div class="modal-overlay" id="modalfranshise" data-modal-type="franchise">
+    <div
+      class="modal-overlay active"
+      id="modalfranshise"
+      data-modal-type="franchise"
+    >
       <div class="modal-wrapper">
         <div class="modal">
           <button class="modal__close" id="modalCloseFranshise">&times;</button>
           <h2 class="modal__title" id="franshiseModalTitle">
             Получите все материалы по франшизе
           </h2>
-          <p>Презентация, условия запуска и бизнес-план</p>
+          <p class="modal-p">Презентация, условия запуска и бизнес-план</p>
 
           <div class="modal__materials">Куда отправить материалы?</div>
           <form class="modal__form" id="modalFormFranshise">
@@ -747,6 +751,27 @@
               </svg>
             </button>
           </form>
+          <div class="modal__markblock">
+            <div class="modal__mark">
+              <div class="modal__mark-img">
+                <img src="./src/images/v.webp" alt="успешно" />
+              </div>
+              <div>Бесплатно</div>
+            </div>
+            <div class="modal__mark">
+              <div class="modal__mark-img">
+                <img src="./src/images/v.webp" alt="успешно" />
+              </div>
+              <div>Без обязательств</div>
+            </div>
+            <div class="modal__mark">
+              <div class="modal__mark-img">
+                <img src="./src/images/v.webp" alt="успешно" />
+              </div>
+              <div>Без спама</div>
+            </div>
+          </div>
+
           <span class="paragraph2">
             Нажимая кнопку, вы соглашаетесь с
             <a class="paragraph2" href="#"
@@ -769,7 +794,7 @@
       </div>
     </div>
 
-    <div class="modal-overlay active" id="modalSuccess">
+    <div class="modal-overlay" id="modalSuccess">
       <div class="modal-wrapper">
         <div class="modal">
           <div class="modal-success">
