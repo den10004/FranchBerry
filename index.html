@@ -20,7 +20,7 @@
           src="./src/images/logo.svg"
           alt="логотип franchBerry"
         />
-        <button class="btn-blue header__img">
+        <button class="btn-blue header__img" id="addFranchiseBtn">
           <svg
             width="19"
             height="19"
@@ -221,7 +221,7 @@
           Каталог актуальных франшиз для открытия бизнеса в 2026 году
         </div>
 
-        <button class="btn-blue header__img">
+        <button class="btn-blue header__img" id="addFranchiseBtn">
           <svg
             width="19"
             height="19"
@@ -305,5 +305,76 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальное окно: Добавить франшизу -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-wrapper">
+        <div class="modal">
+          <button class="modal__close" id="modalClose">&times;</button>
+          <h2 class="modal__title">
+            Отправьте заявку на добавление франшизы в каталог
+          </h2>
+          <form class="modal__form" id="modalForm">
+            <div class="modal__field">
+              <label class="modal__label" for="name">Имя</label>
+              <input
+                class="modal__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Введите имя"
+                required
+              />
+            </div>
+            <div class="modal__field">
+              <label class="modal__label" for="tel">Телефон</label>
+              <input
+                class="modal__input"
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="+7 (___) ___-__-__"
+                required
+              />
+            </div>
+            <div class="modal__field">
+              <label class="modal__label" for="namefr">Название франшизы</label>
+              <input
+                class="modal__input"
+                type="text"
+                id="namefr"
+                name="namefr"
+                required
+                placeholder="Введите название франшизы"
+              />
+            </div>
+
+            <button class="btn-green modal__submit" type="submit">
+              Отправить
+              <svg
+                width="37"
+                height="15"
+                viewBox="0 0 37 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M36.7071 8.07106C37.0976 7.68054 37.0976 7.04737 36.7071 6.65685L30.3431 0.292885C29.9526 -0.0976396 29.3195 -0.0976396 28.9289 0.292885C28.5384 0.683409 28.5384 1.31657 28.9289 1.7071L34.5858 7.36395L28.9289 13.0208C28.5384 13.4113 28.5384 14.0445 28.9289 14.435C29.3195 14.8255 29.9526 14.8255 30.3431 14.435L36.7071 8.07106ZM0 7.36395V8.36395H36V7.36395V6.36395H0V7.36395Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </form>
+          <span class="paragraph2">
+            Нажимая кнопку, вы соглашаетесь с
+            <a class="paragraph2" href="#"
+              >обработкой персональных данных</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/js/modal.js"></script>
   </body>
 </html>

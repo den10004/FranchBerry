@@ -2,6 +2,7 @@
 @import url(./styles/card.css);
 @import url(./styles/hero.css);
 @import url(./styles/footer.css);
+@import url(./styles/modal.css);
 
 :root {
   --black: black;
@@ -11,7 +12,7 @@
   --greenE7: #E3F3E7;
   --blueFA: #E4EDFA;
   --colorFA: #E6F5F2;
-
+  --colorDA: #DDDADA
 }
 
 
@@ -202,6 +203,16 @@ main {
 
 
 
+@media (max-width: 768px) {
+  .modal {
+    padding: 24px;
+  }
+
+  .modal__title {
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 1300px) {
   .body-bg {
     top: 430px;
@@ -263,8 +274,6 @@ main {
   }
 }
 
-
-
 @media (max-width: 425px) {
   .btn-blue {
     font-size: 13px;
@@ -302,8 +311,6 @@ main {
   .paragraph2 {
     font-size: 14px;
   }
-
-
 }
 
 @media (max-width: 360px) {
@@ -313,5 +320,9 @@ main {
 
   .btn-blue {
     padding: 10px 10px;
+  }
+
+  .logo {
+    width: 100px;
   }
 }
