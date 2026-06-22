@@ -603,7 +603,7 @@
     <!-- Модальное окно: Добавить франшизу -->
     <div class="modal-overlay" id="modalOverlay" data-modal-type="add">
       <div class="modal-wrapper">
-        <div class="modal">
+        <div class="modal modal-application">
           <button class="modal__close" id="modalCloseAdd">&times;</button>
           <h2 class="modal__title" id="franshiseModalTitle">
             Отправьте заявку на добавление франшизы в каталог
@@ -676,7 +676,7 @@
       data-modal-type="franchise"
     >
       <div class="modal-wrapper">
-        <div class="modal">
+        <div class="modal modal-fr">
           <button class="modal__close" id="modalCloseFranshise">&times;</button>
           <h2 class="modal__title" id="franshiseModalTitle">
             Получите все материалы по франшизе
@@ -699,18 +699,27 @@
                   value="telegram"
                   checked
                 />
-                <span class="channel-radio"></span>
+                <div class="channel-icon">
+                  <img src="./src/images/tg.svg" alt="телеграм" />
+                </div>
                 <span class="channel-text">Телеграм</span>
+                <span class="channel-radio"></span>
               </label>
               <label class="channel-label">
                 <input type="radio" name="channelRadio" value="max" />
-                <span class="channel-radio"></span>
+                <div class="channel-icon">
+                  <img src="./src/images/max.svg" alt="макс" />
+                </div>
                 <span class="channel-text">Макс</span>
+                <span class="channel-radio"></span>
               </label>
               <label class="channel-label">
                 <input type="radio" name="channelRadio" value="email" />
-                <span class="channel-radio"></span>
+                <div class="channel-icon">
+                  <img src="./src/images/email.svg" alt="почта" />
+                </div>
                 <span class="channel-text">E-mail</span>
+                <span class="channel-radio"></span>
               </label>
             </div>
             <div class="modal__field">
